@@ -33,3 +33,5 @@ In `gradle.properties`:
 ```properties
 annotated_register_version=INSERT RELEASE VERSION HERE
 ```
+
+You can find versions on [Jitpack](https://jitpack.io/#TCBuildMC/AnnotatedRegister).
