@@ -5,6 +5,10 @@ import net.minecraft.util.Identifier;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Field;
 
+/**
+ * Process a field with a specific annotation.
+ * @param <A> The annotation the processor will work with.
+ */
 public interface Processor<A extends Annotation> {
     <T> void process(String modId, Field field);
 

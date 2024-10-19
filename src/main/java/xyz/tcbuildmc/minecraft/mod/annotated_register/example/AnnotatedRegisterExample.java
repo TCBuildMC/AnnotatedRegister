@@ -14,6 +14,9 @@ import xyz.tcbuildmc.minecraft.mod.annotated_register.annotation.vanilla.item.Gr
 import xyz.tcbuildmc.minecraft.mod.annotated_register.annotation.vanilla.Register;
 import xyz.tcbuildmc.minecraft.mod.annotated_register.annotation.ModId;
 
+/**
+ * The example.
+ */
 @ModId(AnnotatedRegisterMod.MOD_ID)
 public class AnnotatedRegisterExample {
     @Register(id = "example_group", type = "item_group")
