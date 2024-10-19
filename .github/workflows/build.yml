@@ -36,6 +36,16 @@ jobs:
           name: Artifacts
           path: build/libs/
 
+      - name: Get short SHA
+        run: echo "SHORT_SHA=${GITHUB_SHA::7}" >> $GITHUB_ENV
+
+      - name: Read Properties info
+        id: prop_info
+        uses: christian-draeger/read-properties@1.1.1
+        with:
+          path: gradle.properties
+          properties: "plugin_version"
+
       - name: create release
         if: github.repository_owner == 'TCBuildMC' && contains(github.event.head_commit.message, '[publish]') == true
         uses: softprops/action-gh-release@v2
