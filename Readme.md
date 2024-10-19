@@ -7,6 +7,9 @@ Supports almost all the versions since Minecraft 1.14.
 
 **NOTE: This mod is for Fabric!**
 
+### Dependencies
+- [Fabric Api](https://modrinth.com/mod/fabric-api)
+
 ### Add dependency to your mod
 
 In `build.gradle`:
