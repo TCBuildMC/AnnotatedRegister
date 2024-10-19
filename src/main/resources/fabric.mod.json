@@ -1,0 +1,35 @@
+{
+	"schemaVersion": 1,
+	"id": "annotated-register",
+	"version": "${version}",
+	"name": "Annotated Register",
+	"description": "An annotation-powered library mod to ease the content registration. Especially for small mods.",
+	"authors": [
+		"TCBuildMC"
+	],
+	"contributors": [
+		"Block_Mrlimr267"
+	],
+	"contact": {
+		"homepage": "https://tcbuildmc.github.io",
+		"sources": "https://github.com/TCBuildMC/AnnotatedRegister"
+	},
+	"license": "Apache-2.0",
+	"icon": "assets/annotated-register/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"xyz.tcbuildmc.minecraft.mod.annotated_register.AnnotatedRegisterMod::onInitialize"
+		],
+		"client": [
+			"xyz.tcbuildmc.minecraft.mod.annotated_register.AnnotatedRegisterMod::onInitializeClient"
+		]
+	},
+	"mixins": [
+		"annotated-register.mixins.json"
+	],
+	"depends": {
+		"minecraft": "*",
+		"fabric": "*"
+	}
+}
